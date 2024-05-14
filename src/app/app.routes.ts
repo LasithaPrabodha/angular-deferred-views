@@ -30,6 +30,13 @@ export const appRoutes: Route[] = [
             (m) => m.DeferWhenConditionComponent
           ),
       },
+      {
+        path: 'defer-on-idle',
+        loadComponent: () =>
+          import('./defer-usecases/on-idle/defer-on-idle').then(
+            (m) => m.DeferOnIdleComponent
+          ),
+      },
     ],
   },
 ];

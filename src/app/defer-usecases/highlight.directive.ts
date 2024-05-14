@@ -1,26 +1,36 @@
-import { Directive, ElementRef } from '@angular/core';
-
-const getCSSVar = (name: string) =>
-  getComputedStyle(document.documentElement).getPropertyValue(name);
+import { DOCUMENT } from '@angular/common';
+import { Directive, ElementRef, Inject, Renderer2 } from '@angular/core';
 
 @Directive({
   standalone: true,
-  selector: '[appHighlight]',
+  selector: '[highlight]',
 })
 export class HighlightDirective {
-  // colors = ['red', 'blue', 'green', 'yellow'];
-  colors = ['--orange-red', '--vivid-pink', '--electric-violet'].map(getCSSVar);
+  colors = ['--orange-red', '--vivid-pink', '--electric-violet'].map(
+    (name: string) =>
+      getComputedStyle(this.document.documentElement).getPropertyValue(name)
+  );
 
-  constructor(el: ElementRef) {
+  constructor(
+    el: ElementRef,
+    private renderer: Renderer2,
+    @Inject(DOCUMENT) private document: Document
+  ) {
     this.changeColor(el);
   }
 
   changeColor(el: ElementRef) {
-    el.nativeElement.style.color =
-      this.colors[Math.floor(Math.random() * this.colors.length)];
+    this.renderer.setStyle(
+      el.nativeElement,
+      'color',
+      this.colors[Math.floor(Math.random() * this.colors.length)]
+    );
     setInterval(() => {
-      el.nativeElement.style.color =
-        this.colors[Math.floor(Math.random() * this.colors.length)];
+      this.renderer.setStyle(
+        el.nativeElement,
+        'color',
+        this.colors[Math.floor(Math.random() * this.colors.length)]
+      );
     }, 500);
   }
 }
