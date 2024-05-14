@@ -1,1 +1,27 @@
-<app-nx-welcome></app-nx-welcome> <router-outlet></router-outlet>
+<header>
+  <h1 class="angular-gradient">
+    Angular ⚡️ <code>&#64;defer</code> ⚡️ Interactive Examples
+  </h1>
+  <section>
+    <strong>author</strong>: by Lasitha Prabodha,
+    <a href="https://lasitha.dev/">lasitha.dev</a>, see this
+    <a href="https://github.com/LasithaPrabodha">github repo</a>
+  </section>
+  <section>
+    <strong>documentation</strong>:
+    <a href="https://angular.dev/guide/defer">official docs</a>,
+    <a href="https://angular.io/guide/defer">legacy docs</a>
+  </section>
+  <section>Open Browser Devtools <em>Network</em> tab.</section>
+</header>
+
+<nav>
+  <a routerLink="/about" routerLinkActive="active">💡 about this app</a>
+  <a routerLink="/defer-guide" routerLinkActive="active">📚 defer guide</a>
+  <br />
+  <br />
+  <a routerLink="/defer-when-condition" routerLinkActive="active">
+    ⚡️ when condition
+  </a>
+</nav>
+<router-outlet></router-outlet>

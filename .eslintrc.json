@@ -23,16 +23,14 @@
         "@angular-eslint/directive-selector": [
           "error",
           {
-            "type": "attribute",
-            "prefix": "app",
+            "type": "attribute", 
             "style": "camelCase"
           }
         ],
         "@angular-eslint/component-selector": [
           "error",
           {
-            "type": "element",
-            "prefix": "app",
+            "type": "element", 
             "style": "kebab-case"
           }
         ]

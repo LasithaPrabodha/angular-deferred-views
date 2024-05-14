@@ -1,0 +1,59 @@
+.gradient-text {
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+nav {
+  background-color: var(--background-color);
+  padding: 10px;
+}
+
+nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+nav a:hover {
+  background: -webkit-linear-gradient(
+    var(--angle),
+    var(--orange-red) 0%,
+    var(--electric-violet) 50%,
+    var(--vivid-pink) 100%
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+nav a.active {
+  font-weight: bold;
+  background: -webkit-linear-gradient(
+    var(--angle),
+    var(--orange-red) 0%,
+    var(--vivid-pink) 50%,
+    var(--electric-violet) 100%
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+nav {
+  padding: 10px 0px;
+  margin: 4px 0px;
+  border-top: 1px solid var(--main-accent-color);
+  border-bottom: 1px solid var(--main-accent-color);
+}
