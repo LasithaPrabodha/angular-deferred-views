@@ -14,10 +14,10 @@ function injectSnippets() {
   const snippets = signal({ tsHtml: '', htmlHtml: '' });
 
   Promise.all([
-    fetch(`/angular-defer/assets/snippets${router.url}/ts.html`).then((res) =>
+    fetch(`/angular-deferred-views/assets/snippets${router.url}/ts.html`).then((res) =>
       res.text()
     ),
-    fetch(`/angular-defer/assets/snippets${router.url}/html.html`).then((res) =>
+    fetch(`/angular-deferred-views/assets/snippets${router.url}/html.html`).then((res) =>
       res.text()
     ),
   ]).then(([tsHtml, htmlHtml]) => {

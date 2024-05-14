@@ -17,8 +17,12 @@
   "targetDefaults": {
     "@angular-devkit/build-angular:application": {
       "cache": true,
-      "dependsOn": ["^build"],
+      "dependsOn": ["build-snippets", "^build"],
       "inputs": ["production", "^production"]
+    },
+    "build-snippets": {
+      "cache": true,
+      "inputs": ["{projectRoot}/src/app/defer-usecases/**/*"]
     },
     "@nx/eslint:lint": {
       "cache": true,
@@ -65,6 +69,6 @@
       "unitTestRunner": "jest"
     }
   },
-  "defaultProject": "angular-defer",
+  "defaultProject": "angular-deferred-views",
   "nxCloudAccessToken": "MWIyNDM2OWYtY2E3MS00MjY3LTg1NGEtZDcxOGVkYWQ3ODQ3fHJlYWQtd3JpdGU="
 }

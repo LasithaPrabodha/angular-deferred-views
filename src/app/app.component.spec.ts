@@ -14,11 +14,11 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h1')?.textContent).toContain(
-      'Welcome angular-defer'
+      'Welcome angular-deferred-views'
     );
   });
 
-  it(`should have as title 'angular-defer'`, () => {
+  it(`should have as title 'angular-deferred-views'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
   });

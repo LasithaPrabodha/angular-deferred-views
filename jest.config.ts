@@ -1,9 +1,9 @@
 /* eslint-disable */
 export default {
-  displayName: 'angular-defer',
+  displayName: 'angular-deferred-views',
   preset: './jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: './coverage/angular-defer',
+  coverageDirectory: './coverage/angular-deferred-views',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

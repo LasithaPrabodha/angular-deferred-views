@@ -54,7 +54,7 @@ import { CommonModule } from '@angular/common';
       <ul>
         <li>
           <a
-            href="https://angularexperts.io/blog/angular-defer-lazy-loading-total-guide"
+            href="https://angularexperts.io/blog/angular-deferred-views-lazy-loading-total-guide"
             >Total guide to lazy loading with Angular &#64;defer</a
           >
         </li>
