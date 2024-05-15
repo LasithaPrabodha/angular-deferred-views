@@ -104,7 +104,14 @@ export const appRoutes: Route[] = [
         path: 'defer-error',
         loadComponent: () =>
           import('./defer-usecases/defer-error').then(
-            (m) => m.DeferErrorComponent,
+            (m) => m.DeferErrorComponent
+          ),
+      },
+      {
+        path: 'defer-loading-vs-placeholder',
+        loadComponent: () =>
+          import('./defer-usecases/defer-loading-vs-placeholder').then(
+            (m) => m.DeferLoadingVsPlaceholderComponent
           ),
       },
     ],
