@@ -86,6 +86,13 @@ export const appRoutes: Route[] = [
             (m) => m.DeferMultipleComponent,
           ),
       },
+      {
+        path: 'defer-npm-package',
+        loadComponent: () =>
+          import('./defer-usecases/defer-npm-package').then(
+            (m) => m.DeferNPMPackageComponent,
+          ),
+      },
     ],
   },
 ];
