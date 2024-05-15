@@ -114,6 +114,13 @@ export const appRoutes: Route[] = [
             (m) => m.DeferLoadingVsPlaceholderComponent
           ),
       },
+      {
+        path: 'defer-prefetch',
+        loadComponent: () =>
+          import('./defer-usecases/defer-prefetch').then(
+            (m) => m.DeferPrefetchComponent,
+          ),
+      },
     ],
   },
 ];
