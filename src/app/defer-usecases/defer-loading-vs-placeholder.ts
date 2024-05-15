@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { LegacyModule } from './legacy/legacy.module';
-import { LazyLoadingVsPlaceholder } from './lazy-loading-vs-placeholder';
+import { LazyLoadingVsPlaceholderComponent } from './lazy-loading-vs-placeholder';
 import { BoxComponent } from '../components/box.component';
 import { ButtonComponent } from '../components/button.component';
 import { LoaderComponent } from '../components/loader.component';
@@ -16,7 +16,7 @@ import { LoaderComponent } from '../components/loader.component';
     LoaderComponent,
     BoxComponent,
     ButtonComponent,
-    LazyLoadingVsPlaceholder,
+    LazyLoadingVsPlaceholderComponent,
   ],
   template: `
     <app-box>

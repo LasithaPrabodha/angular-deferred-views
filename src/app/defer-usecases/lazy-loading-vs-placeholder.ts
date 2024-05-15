@@ -8,5 +8,4 @@ import { Component } from '@angular/core';
     <ng-content></ng-content>
   `,
 })
-export class LazyLoadingVsPlaceholder {
-}
+export class LazyLoadingVsPlaceholderComponent {}
