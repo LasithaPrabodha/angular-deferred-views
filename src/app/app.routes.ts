@@ -100,6 +100,13 @@ export const appRoutes: Route[] = [
             (m) => m.DeferNestedComponent
           ),
       },
+      {
+        path: 'defer-error',
+        loadComponent: () =>
+          import('./defer-usecases/defer-error').then(
+            (m) => m.DeferErrorComponent,
+          ),
+      },
     ],
   },
 ];
