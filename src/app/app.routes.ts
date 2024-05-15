@@ -83,14 +83,21 @@ export const appRoutes: Route[] = [
         path: 'defer-multiple',
         loadComponent: () =>
           import('./defer-usecases/defer-multiple').then(
-            (m) => m.DeferMultipleComponent,
+            (m) => m.DeferMultipleComponent
           ),
       },
       {
         path: 'defer-npm-package',
         loadComponent: () =>
           import('./defer-usecases/defer-npm-package').then(
-            (m) => m.DeferNPMPackageComponent,
+            (m) => m.DeferNPMPackageComponent
+          ),
+      },
+      {
+        path: 'defer-nested',
+        loadComponent: () =>
+          import('./defer-usecases/defer-nested').then(
+            (m) => m.DeferNestedComponent
           ),
       },
     ],
