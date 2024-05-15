@@ -72,6 +72,13 @@ export const appRoutes: Route[] = [
             (m) => m.DeferOnTimerComponent
           ),
       },
+      {
+        path: 'defer-accordion',
+        loadComponent: () =>
+          import('./defer-usecases/defer-accordion').then(
+            (m) => m.DeferAccordionComponent
+          ),
+      },
     ],
   },
 ];
