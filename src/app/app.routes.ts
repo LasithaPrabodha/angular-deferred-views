@@ -79,6 +79,13 @@ export const appRoutes: Route[] = [
             (m) => m.DeferAccordionComponent
           ),
       },
+      {
+        path: 'defer-multiple',
+        loadComponent: () =>
+          import('./defer-usecases/defer-multiple').then(
+            (m) => m.DeferMultipleComponent,
+          ),
+      },
     ],
   },
 ];
