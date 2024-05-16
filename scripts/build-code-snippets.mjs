@@ -25,7 +25,7 @@ const useCases = [
   'lazy-when-condition',
 ];
 
-const themes = ['github-light', 'one-dark-pro'];
+const themes = [ 'one-dark-pro', 'github-light'];
 const roots = [
   '../src/app/defer-usecases/',
   '../src/assets/snippets/',
